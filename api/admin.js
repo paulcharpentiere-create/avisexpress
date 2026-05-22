@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   if (req.method === 'PATCH') {
     const { id, salonName, googleLink, plan, status, message } = req.body;
     try {
-      const update = await fetch(`${SUPABASE_URL}/rest/v1/salons?id=eq.${id}`, {
+      const update = await fetch(`${SUPABASE_URL}/rest/v1/salons?id=eq.${encodeURIComponent(id)}`, {
         method: 'PATCH',
         headers: { ...headers, 'Prefer': 'return=minimal' },
         body: JSON.stringify({
