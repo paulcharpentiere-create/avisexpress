@@ -845,7 +845,7 @@ async function saveSalon(id) {
   btn.textContent = 'Enregistrement…';
 
   try {
-    const res = await fetch('/api/admin', {
+   const res = await fetch(`/api/admin?adminPassword=${process.env.NEXT_PUBLIC_ADMIN_PASSWORD}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
