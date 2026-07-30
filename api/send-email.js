@@ -65,7 +65,7 @@ export default async function handler(req, res) {
           </div>
           ` : `
           <div style="background:#edf7f1;border:1px solid #a8d9bc;border-radius:12px;padding:16px;margin-bottom:24px">
-            <p style="margin:0;color:#2d7a4f;font-size:14px;font-weight:500">✅ Votre compte est actif ! Connectez-vous sur <strong>avisexpress.fr/app</strong> pour commencer.</p>
+            <p style="margin:0;color:#2d7a4f;font-size:14px;font-weight:500">✅ Votre compte est actif ! Connectez-vous sur <strong>avisexpress.fr</strong> pour commencer.</p>
           </div>
           `}
           <p style="color:#6b6560;font-size:13px;line-height:1.6">Une question ? Contactez-nous à <strong>${sender}</strong>.</p>
