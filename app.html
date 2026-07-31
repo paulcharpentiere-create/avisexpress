@@ -804,6 +804,7 @@ function renderAdminList(salons) {
           <div class="admin-field">
             <label>Formule</label>
             <select id="plan-${safeId}">
+              <option value="trial" ${a.plan==='trial'?'selected':''}>Essai gratuit — 50 SMS</option>
               <option value="starter" ${a.plan==='starter'?'selected':''}>Starter — 100 SMS</option>
               <option value="pro" ${a.plan==='pro'?'selected':''}>Pro — 250 SMS</option>
               <option value="business" ${a.plan==='business'?'selected':''}>Business — 600 SMS</option>
